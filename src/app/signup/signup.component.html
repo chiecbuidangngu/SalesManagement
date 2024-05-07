@@ -1,5 +1,5 @@
 <div class="signup-container">
-  <form class="signup-form">
+  <form [formGroup]="signupForm" (submit)="submitSignup()" class="signup-form">
     <div class="header-form">
       <h1> Create an account.</h1>
       <span class="sub-header">
@@ -15,19 +15,13 @@
     </div>
     <div class="content-form">
       <div class="input-form">
-        <input class="input-firstname" type="text" placeholder="First Name"><br>
-        <input class="input-lastname" type="text" placeholder="Last Name"><br>
-        <input class="input-username" type="text" placeholder="Email Address"><br>
-        <input class="input-password" type="text" placeholder="Password">
+        <input class="input-firstname" formControlName="firstName" type="text" placeholder="First Name"><br>
+        <input class="input-lastname" formControlName="lastName" type="text" placeholder="Last Name"><br>
+        <input class="input-email" formControlName="email" type="text" placeholder="Email Address"><br>
+        <input class="input-password" formControlName="password" type="password" placeholder="Password">
       </div>
-      <div class="sub-input-form">
-        <div class="remember-me">
-          <input class="miss-password" type="checkbox" name="password" id="password">
-          <label for="password">Remember me</label>
-        </div>
-        <a href="#">Forgot your password?</a>
-      </div>
-      <div class="button-form"> Sign In</div>
+
+      <button class="button-form" type="submit"> Sign Up</button>
     </div>
   </form>
 </div>

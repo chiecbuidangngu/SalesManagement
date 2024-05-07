@@ -1,5 +1,5 @@
 <div class="login-container">
-  <form class="login-form">
+  <form [formGroup]="loginForm" class="login-form" (submit)="submitLogin()">
     <div class="header-form">
       <h1> Get's started.</h1>
       <span class="sub-header">
@@ -12,12 +12,13 @@
 
       </div>
       <hr>
+
     </div>
     <div class="content-form">
       <div class="input-form">
-        <input class="input-username" type="text" placeholder="Email Address"><br>
+        <input class="email-input" type="text" formControlName="email" placeholder="Email Address"><br>
 
-        <input class="input-password" type="text" placeholder="Password">
+        <input class="password-input" type="password" formControlName="password" placeholder="Password">
       </div>
       <div class="sub-input-form">
         <div class="remember-me">
@@ -26,7 +27,8 @@
         </div>
         <a href="#">Forgot your password?</a>
       </div>
-      <div class="button-form"> Sign In</div>
+      <button class="button-form" type="submit" routerLink="/dashboard"> Log In</button>
+
     </div>
   </form>
 </div>

@@ -10,6 +10,11 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  background-image: url(./assets/images/image.png);
+  background-image: url(./assets/images/bgr.jpg);
   background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
 }

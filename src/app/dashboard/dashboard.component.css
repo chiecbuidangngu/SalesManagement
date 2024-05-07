@@ -1,0 +1,43 @@
+.dashboard-container {
+  display: flex;
+}
+
+.nav-container {
+  background-color: #3b71fe;
+  width: 15vw;
+  height: 100vh;
+}
+.dashboard-content {
+  background-color: rgb(220, 228, 235);
+  width: 85vw;
+}
+.user-info {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-avt {
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.user-name {
+  margin-right: 50px;
+  color: aliceblue;
+}
+li {
+  background-color: #3b71fe;
+  color: aliceblue;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li:hover {
+  background-color: #fff;
+  color: #3b71fe;
+  border-radius: 30px;
+}
+.fa-cog {
+  margin-right: 10px;
+}
